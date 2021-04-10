@@ -1,0 +1,29 @@
+<!-- <%= form_for(@tasks) do |t| %>
+<%= f.label :title %>
+<%= f.text_field : %>
+-->
+
+<form action="/tasks" method="post">
+  <label for="title">Title</label>
+  <input type="text" name="task[:title]">
+  <label for="details">Details</label>
+  <input type="text" name="task[:details]">
+  <label for="completed">Completed</label>
+  <input type="checkbox" name="task[:completed]">
+  <input type="submit">
+</form>
+
+
+<!-- params[:title]
+params[:details]
+params[:completed]
+
+Restaurant.create(params[:restaurant])
+Task.create(params[:task])
+params = {
+  task: {
+  title: 'something',
+  details: 'something something',
+  completed: false
+}
+} -->
