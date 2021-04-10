@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # Display all tasks
   get 'tasks', to: 'tasks#index'
   # Display one task
-  get 'tasks/:id', to: 'tasks#show', as: :task
-  # Create task
   get 'tasks/new', to: 'tasks#new'
-  #
+  get 'tasks/:id', to: 'tasks#show', as: :task
+  # New task
+  # Create task
 end
