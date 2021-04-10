@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get 'tasks/:id', to: 'tasks#show', as: :task
   # New task
   # Create task
-  post 'tasks', to: 'tasks:create'
+  post 'tasks', to: 'tasks#create'
 end
