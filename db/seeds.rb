@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Cleaning up database"
+Task.destroy.all?
+puts "Database is clean"
+
+puts "Creating Pokemons as tasks"
+100.times do |
+  Task.create(
+    title: Faker::Games::Pokemon.name,
+    details: Faker::Games::Pokemon.
+    )
+  puts "Task #{task.id} is created"
+end
+
+puts "Done!"
