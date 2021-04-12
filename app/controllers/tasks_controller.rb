@@ -1,5 +1,4 @@
 class TasksController < ApplicationController
-  before_action :task_params, only: [:update, :destroy, :create]
   def index
     @tasks = Task.all
   end

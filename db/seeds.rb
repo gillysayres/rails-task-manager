@@ -14,7 +14,7 @@ puts "Creating Pokemons as tasks"
   task = Task.create(
     title: Faker::Games::Pokemon.name,
     details: Faker::Games::Pokemon.move,
-    completed: false
+    # completed: rand(false, true)
     )
   puts "Task #{task.id} is created"
 end
